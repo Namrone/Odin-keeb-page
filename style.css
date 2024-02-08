@@ -3,7 +3,7 @@ html, body {
     background-color: #1F2937;
 }
 
-.header, .title, .content, .bottom, .left, .info-row, .slide, .quote{
+.header, .title, .content, .bot-box, .left, .info-row, .slide, .quote{
     display: flex;
 }
 
@@ -23,7 +23,8 @@ body {
     justify-content: space-between;
     background-color: #1F2937;
     align-items: center;
-    padding: 10px 10% 0 10%;
+    width: 1000px;
+    padding: 25px;
 }
 
 a:link, a:visited, a:hover, a:active{
@@ -58,15 +59,17 @@ div{
 
 button {
     background-color: #3882f6;
-    border-color: #f9faf8;
-    border-width: 2px;
-    max-width: 120px;
+    border: 2px solid #f9faf8;
+    width: 100px;
+    border-radius: 10px;
+    padding: 5px;
 }
 
 .title {
     align-items: center;
     justify-content: center;
-    padding: 30px 10% 30px 10%;
+    width: 1000px;
+    padding: 25px;
     background-color: #1f2937;
     gap: 150px;
 }
@@ -79,7 +82,8 @@ button {
 .content {
     align-items: center;
     justify-content: center;
-    padding: 30px 0 30px 0;
+    width: 1000px;
+    padding: 25px;
     background-color: white;
 }
 
@@ -96,9 +100,24 @@ h2{
     gap: 8px;
 }
 
-.quote {
-    padding: 30px 0 30px 0;
+.pic-box{
+    display:flex;
+    width: 240px;
+    height: 180px;
+    border: 2px solid #3882F6;
+    border-radius: 10px;
     align-items: center;
+    justify-content: center;
+    background-color: #E5e7eb;
+}
+
+img.tester {
+    border-radius: 7px;
+}
+
+.quote {
+    width: 1000px;
+    padding: 25px;
     background-color: #E5e7eb;
 }
 
@@ -110,14 +129,27 @@ h3 {
 }
 
 .bottom {
+    width: 1000px;
+    padding: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bot-box{
     align-items: center;
     justify-content: center;
     gap: 50px;
     background-color: #3882F6;
+    border-radius: 10px;
+    width: 700px;
+    padding: 25px;
 }
 
 h4{
-    font: extra-bold 24px;
+    font-size: 20px;
+    text-align: right;
 }
 
 h5 {
@@ -140,6 +172,10 @@ p {
     font-size: 18px;
 }
 
-.footer {
+.footer{
     text-align: center;
+}
+
+.footer p, .title .left p{
+    color: #E5e7eb;
 }
